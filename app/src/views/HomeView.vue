@@ -1,9 +1,11 @@
 <template>
-  <main></main>
+  <main>
+    <MenuItems v-for="item in items" :key="item.name" />
+  </main>
 </template>
 
 <script setup>
-import MenuItem from '../components/MenuItem.vue'
+import MenuItems from '../components/MenuItem.vue'
 const items = [{ name: 'test', price: 5 }]
 </script>
 
