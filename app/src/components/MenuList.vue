@@ -1,5 +1,5 @@
 <template>
-  <div class=""></div>
+  <div class="flex flex-row m-4"></div>
 </template>
 
 <script setup></script>

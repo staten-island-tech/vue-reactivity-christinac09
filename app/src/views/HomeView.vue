@@ -1,14 +1,21 @@
 <template>
   <main>
-    <MenuItems v-for="item in items" :key="item.name" :item="item" />
+    <!-- <MenuList> </MenuList> -->
+    <IngredientCards
+      v-for="ingredient in ingredients"
+      :key="ingredient.name"
+      :ingredient="ingredient"
+    />
   </main>
 </template>
 
 <script setup>
-import MenuItems from '../components/MenuItem.vue'
-const items = [
-  { name: 'something', price: 5, image: 'placeholder.jpg' },
-  { name: 'another thing', price: 10, image: 'placeholder.jpg' },
+import IngredientCards from '../components/IngredientCards.vue'
+import MenuList from '../components/MenuList.vue'
+const ingredients = [
+  { name: 'something', price: 5, image: 'placeholder.png' },
+  { name: 'another thing', price: 10, image: 'placeholder.png' },
+  { name: 'some other thing', price: 10, image: 'placeholder.png' },
 ]
 </script>
 
