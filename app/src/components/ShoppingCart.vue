@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap flex-row mx-auto w-[90%]">
+  <div class="flex flex-wrap flex-row mx-auto bg-blue">
     <CartItem v-for="item in cartItems" :key="item.name" :item="item" />
   </div>
 </template>
