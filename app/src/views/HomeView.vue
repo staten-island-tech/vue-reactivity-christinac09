@@ -1,12 +1,14 @@
 <template>
   <main>
+    <TheHeading></TheHeading>
     <MenuItems> </MenuItems>
     <!-- how to get cards inside this component -->
   </main>
 </template>
 
 <script setup>
-import IngredientCards from '../components/IngredientCard.vue'
+import { reactive } from 'vue'
+import TheHeading from '../components/TheHeading.vue'
 import MenuItems from '../components/MenuItems.vue'
 </script>
 

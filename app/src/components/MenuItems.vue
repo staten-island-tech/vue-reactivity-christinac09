@@ -7,17 +7,6 @@
 <script setup>
 import { items } from '../items.js'
 import IngredientCards from '../components/IngredientCard.vue'
-
-/* export default {
-  components: { Card },
-  props: {
-    cards: {
-      type: Array,
-      required: true
-    }
-  }
-};
- */
 </script>
 
 <style scoped></style>

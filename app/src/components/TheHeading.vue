@@ -1,3 +1,8 @@
 <script setup></script>
 
-<template></template>
+<template>
+  <div class="">
+    <h1>Title</h1>
+    <p>about</p>
+  </div>
+</template>
