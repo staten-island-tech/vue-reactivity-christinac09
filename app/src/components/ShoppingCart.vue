@@ -1,6 +1,7 @@
 <template>
-  <div class="flex flex-wrap flex-row mx-auto bg-blue">
-    <CartItem v-for="item in cartItems" :key="item.name" :item="item" />
+  <div class="flex flex-wrap flex-row mx-auto bg-green">
+    <CartItem v-for="item in cart.items" :key="item.name" :item="item" />
+    <h2>Total Cost: ${{ cart.totalCost }}</h2>
   </div>
 </template>
 

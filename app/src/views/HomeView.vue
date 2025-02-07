@@ -1,7 +1,7 @@
 <template>
   <main>
-    <TheHeading></TheHeading>
     <CardContainer> </CardContainer>
+    <ShoppingCart />
   </main>
 </template>
 
