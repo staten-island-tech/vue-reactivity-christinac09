@@ -5,8 +5,8 @@
 </template>
 
 <script setup>
-import { cartItems } from '../items.js'
-import CartItem from 'CartItem.vue'
+import { cart } from '../variables.js'
+import CartItem from './CartItem.vue'
 </script>
 
 <style scoped></style>

@@ -22,6 +22,4 @@ const items = [
   { name: 'Salted Caramel Chips', price: 3.0, type: 'topping', image: 'placeholder.png' },
 ]
 
-const cartItems = []
-
-export { items, cartItems }
+export { items }

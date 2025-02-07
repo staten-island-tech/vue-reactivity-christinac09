@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   item: Object,
 })
 </script>

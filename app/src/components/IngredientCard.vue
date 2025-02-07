@@ -7,19 +7,23 @@
       <h2 class="card-title">{{ item.name }}</h2>
       <h3>{{ item.price }}</h3>
       <div class="card-actions justify-end">
-        <button @click="add" class="btn btn-primary" id="">Add</button>
+        <button @click="addToCart(item)" class="btn btn-primary" :id="item.name">Add</button>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { cartItems } from '../items.js'
-defineProps({
+import { cart } from '../variables.js'
+const props = defineProps({
   item: Object,
 })
-function add() {
-  cartItems.append() // ummm how to get item from button here
+function addToCart(item) {
+  console.log('add btn clicked')
+  cart.items.push(item)
+  cart.totalItems++
+  cart.totalCost += item.price
+  console.log(cart) // why is this weird
 }
 </script>
 

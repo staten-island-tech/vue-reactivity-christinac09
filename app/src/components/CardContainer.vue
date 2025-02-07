@@ -6,7 +6,7 @@
 
 <script setup>
 import { items } from '../items.js'
-import IngredientCards from '../components/IngredientCard.vue'
+import IngredientCards from './IngredientCard.vue'
 </script>
 
 <style scoped></style>
