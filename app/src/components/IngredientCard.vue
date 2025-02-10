@@ -1,11 +1,12 @@
 <template>
-  <div class="card bg-base-100 w-96 shadow-xl m-8">
+  <div class="card bg-base-100 w-60 shadow-xl m-8">
     <figure>
       <img :src="item.image" alt="Shoes" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">{{ item.name }}</h2>
-      <h3>{{ item.price }}</h3>
+      <p>Type: {{ item.type }}</p>
+      <p>Price: {{ item.price }}</p>
       <div class="card-actions justify-end">
         <button @click="addToCart(item)" class="btn btn-primary" :id="item.name">Add</button>
       </div>
@@ -23,7 +24,8 @@ function addToCart(item) {
   cart.items.push(item)
   cart.totalItems++
   cart.totalCost += item.price
-  console.log(cart) // why is this weird
+  console.log(cart) // why is this
+  // add image to the cake
 }
 </script>
 

@@ -1,12 +1,12 @@
+// have 5 types, 4 in each (types: fruits, frosting, flavor, garnish, drizzle); items below are placeholders
 const items = [
-  // have 5 types, 4 in each (types: fruits, frosting, flavor, garnish, drizzle); items below are placeholders
   { name: 'Vanilla Frosting', price: 3.5, type: 'frosting', image: 'placeholder.png' },
   { name: 'Chocolate Ganache', price: 4.0, type: 'frosting', image: 'placeholder.png' },
   { name: 'Strawberry Glaze', price: 3.0, type: 'glaze', image: 'placeholder.png' },
   { name: 'Buttercream', price: 4.5, type: 'frosting', image: 'placeholder.png' },
   { name: 'Caramel Drizzle', price: 2.5, type: 'drizzle', image: 'placeholder.png' },
   { name: 'Crushed Oreos', price: 2.0, type: 'topping', image: 'placeholder.png' },
-  { name: 'Rainbow Sprinkles', price: 1.5, type: 'topping', image: 'placeholder.png' },
+  { name: 'Rainbow Sprinkles', price: 1.5, type: 'topping', image: 'rainbow_sprinkles.png' },
   { name: 'Toasted Almonds', price: 2.8, type: 'topping', image: 'placeholder.png' },
   { name: 'Fresh Blueberries', price: 3.2, type: 'fruit', image: 'placeholder.png' },
   { name: 'Chopped Strawberries', price: 3.0, type: 'fruit', image: 'placeholder.png' },
