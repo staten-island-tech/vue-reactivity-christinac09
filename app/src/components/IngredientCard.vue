@@ -1,7 +1,7 @@
 <template>
   <div class="card bg-base-100 w-60 shadow-xl m-8">
     <figure>
-      <img :src="item.image" alt="Shoes" />
+      <img :src="item.image" alt="Shoes" class="mt-2" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">{{ item.name }}</h2>

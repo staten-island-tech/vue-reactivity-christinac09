@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white w-[30vw] h-100 absolute right-0 top-32">
-    <img src="/bowl.png" alt="" />
+  <div class="w-[30vw] relative">
+    <img src="/bowl.png" alt="" class="w-full h-auto" />
     <CanvasItem v-for="item in cart.items" :key="item.name" :item="item" />
   </div>
 </template>
