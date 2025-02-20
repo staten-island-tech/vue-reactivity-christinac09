@@ -28,7 +28,9 @@ function addToCart(item) {
   } else {
     cart.items.push(item)
     cart.totalItems++
+    console.log("before add: ",cart.totalCost)
     cart.totalCost += item.price
+    console.log("after: ",cart.totalCost)
     console.log(cart)
   }
 }

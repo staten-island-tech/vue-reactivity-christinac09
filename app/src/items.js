@@ -23,9 +23,7 @@ const items3 = [
   { name: "Chopped Nuts", price: 0.80, type: "nuts", image: "" },
   { name: "Whipped Cream", price: 0.50, type: "dairy", image: "" },
   { name: "Caramel Drizzle", price: 0.60, type: "syrup", image: "" },
-  { name: "Hot Fudge", price: 0.70, type: "syrup", image: "" },
-  { name: "Marshmallows", price: 0.60, type: "candy", image: "" },
-  { name: "M&M’s", price: 0.70, type: "candy", image: "" },
+  
   { name: "Peanut Butter Cups", price: 0.75, type: "candy", image: "" },
   { name: "Coconut Flakes", price: 0.65, type: "nuts", image: "" },
   
@@ -46,6 +44,9 @@ const items = [
   { name: "Banana Slices", price: 0.80, type: "fruit", image: "banana-slices.png" },
   { name: "Honey Drizzle", price: 0.55, type: "syrup", image: "honey-drizzle.png" },
   { name: "Almond", price: 0.85, type: "nuts", image: "almonds.png" },
+  { name: "Hot Fudge", price: 0.70, type: "syrup", image: "fudge-drizzle.png" },
+  { name: "Marshmallows", price: 0.60, type: "candy", image: "marshmallow.png" },
+  { name: "M&M’s", price: 0.70, type: "candy", image: "m&m.png" },
 ]
 
 export { items }
