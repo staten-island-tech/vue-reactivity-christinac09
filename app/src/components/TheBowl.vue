@@ -1,6 +1,6 @@
 <template>
-  <div class="relative">
-    <img src="/bowl.png" alt="" class="w-full h-auto" />
+  <div class="relative w-full">
+    <img src="/bowl.png" alt="" class="w-full h-auto mx-auto" />
     <BowlItem v-for="item in cart.items" :key="item.name" :item="item" />
   </div>
 </template>

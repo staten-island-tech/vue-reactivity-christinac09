@@ -38,15 +38,16 @@ const items = [
   { name: 'Chocolate Sprinkles', price: 1.5, type: 'sprinkles', image: 'choco-sprinkles.png' },
   { name: "Strawberries", price: 0.90, type: "fruit", image: "chopped-strawberries.png" },
   { name: "Blueberries", price: 0.90, type: "fruit", image: "blueberries.png" },
+  { name: "Banana Slices", price: 0.80, type: "fruit", image: "banana-slices.png" },
   { name: "Oreo Crumbs", price: 0.60, type: "cookie", image: "oreo-crumbs.png" },
   { name: "Brownie Chunks", price: 0.95, type: "cookie", image: "brownie-chunks.png" },
   { name: "Gummy Bears", price: 0.70, type: "candy", image: "gummy-bears.png" },
-  { name: "Banana Slices", price: 0.80, type: "fruit", image: "banana-slices.png" },
-  { name: "Honey Drizzle", price: 0.55, type: "syrup", image: "honey-drizzle.png" },
-  { name: "Almond", price: 0.85, type: "nuts", image: "almonds.png" },
   { name: "Hot Fudge", price: 0.70, type: "syrup", image: "fudge-drizzle.png" },
+  { name: "Caramel Drizzle", price: 0.55, type: "syrup", image: "caramel-drizzle.png" },
   { name: "Marshmallows", price: 0.60, type: "candy", image: "marshmallow.png" },
   { name: "M&M’s", price: 0.70, type: "candy", image: "m&m.png" },
+  { name: "Almond", price: 0.85, type: "nuts", image: "almonds.png" },
+  
 ]
 
 export { items }
