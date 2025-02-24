@@ -23,6 +23,9 @@ function removeOne(item) {
   cart.items.forEach((i) => {
     if (i.name === item.name) {
       i.amount--
+      if (i.amount <= 0) {
+        cart.items = cart.items.filter((thing) => thing.name !== i.name)
+      }
     }
   })
   cart.totalCost -= item.price
