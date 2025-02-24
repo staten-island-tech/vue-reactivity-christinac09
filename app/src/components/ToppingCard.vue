@@ -28,7 +28,7 @@ function addToCart(item) {
     }
   })
   if (exists) {
-    alert('one more serving added')
+    //alert('one more serving added')
     cart.items.forEach((i) => {
       console.log(i.name)
       if (i.name === item.name) {
