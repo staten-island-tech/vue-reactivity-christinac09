@@ -1,5 +1,5 @@
 <template>
-  <div class="card compact bg-base-100 w-80 shadow-xl m-4 mx-auto">
+  <div class="card compact bg-[#cc9794] w-80 shadow-xl m-4 mx-auto">
     <div class="card-body">
       <h2 class="card-title">{{ item.name }}</h2>
       <h3>${{ item.price }}</h3>

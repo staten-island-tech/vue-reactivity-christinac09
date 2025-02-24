@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="item.image" alt="" :id="item.name" class="absolute top-14 right-8 w-[90%] h-auto" />
+    <img :src="item.image" alt="" :id="item.name" class="absolute top-14 right-8 w-[85%] h-auto" />
   </div>
 </template>
 

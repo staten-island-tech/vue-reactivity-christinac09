@@ -1,5 +1,5 @@
 <template>
-  <div class="card bg-base-100 w-60 shadow-xl m-8">
+  <div class="card bg-[#d5bda5be] w-60 m-8">
     <figure>
       <img :src="item.image" alt="Shoes" class="mt-2" />
     </figure>
