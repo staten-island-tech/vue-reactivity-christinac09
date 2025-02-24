@@ -1,8 +1,9 @@
 <template>
-  <div class="card compact bg-[#fae9da] w-80 shadow-xl m-4 mx-auto">
+  <div class="card compact bg-[#fae9da] w-80 m-4 mx-auto">
     <div class="card-body">
       <h2 class="card-title">{{ item.name }}</h2>
       <h3>${{ item.price }}</h3>
+      <h3>{{ item.amount }} servings</h3>
     </div>
     <div class="card-actions justify-end mt-0 ml-0 mb-2 mr-2">
       <button @click="removeFromCart(item)" class="btn btn-primary" :id="item.name">Remove</button>
@@ -14,6 +15,7 @@
 import { cart } from '../variables.js'
 const props = defineProps({
   item: Object,
+  amount: Number,
 })
 function removeFromCart(item) {
   console.log('remove btn clicked')

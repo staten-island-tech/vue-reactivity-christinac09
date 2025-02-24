@@ -6,7 +6,7 @@
     <h3 class="text-xl text-center w-full">Total Cost: ${{ cart.totalCost }}</h3>
     <h3 class="text-xl text-center w-full">Total Items: {{ cart.totalItems }}</h3>
     <TheBowl />
-    <CartItem v-for="item in cart.items" :key="item.name" :item="item" />
+    <CartItem v-for="item in cart.items" :key="item.name" :item="item" :amount="item.amount" />
   </div>
 </template>
 

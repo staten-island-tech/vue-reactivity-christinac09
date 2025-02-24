@@ -21,12 +21,25 @@ const props = defineProps({
 })
 function addToCart(item) {
   console.log('add btn clicked')
-  // why is this
-  // add image to the cake
-  if (cart.items.includes(item)) {
-    alert('this is already in the cart')
+  let exists = false
+  cart.items.forEach((i) => {
+    if (i.name === item.name) {
+      exists = true
+    }
+  })
+  if (exists) {
+    alert('one more serving added')
+    cart.items.forEach((i) => {
+      console.log(i.name)
+      if (i.name === item.name) {
+        i.amount++
+        cart.totalCost += item.price
+        cart.totalCost = Math.round(cart.totalCost * 100) / 100
+      }
+    })
   } else {
-    cart.items.push(item)
+    const theItem = { name: item.name, amount: 1, price: item.price, image: item.image }
+    cart.items.push(theItem)
     cart.totalItems++
     cart.totalCost += item.price
     cart.totalCost = Math.round(cart.totalCost * 100) / 100
