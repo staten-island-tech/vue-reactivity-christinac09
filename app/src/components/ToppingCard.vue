@@ -6,7 +6,7 @@
     <div class="card-body">
       <h2 class="card-title">{{ item.name }}</h2>
       <p>Type: {{ item.type }}</p>
-      <p>Price: {{ item.price }}</p>
+      <p>Price: ${{ item.price }}</p>
       <div class="card-actions justify-end">
         <button @click="addToCart(item)" class="btn btn-primary" :id="item.name">Add</button>
       </div>
@@ -28,9 +28,8 @@ function addToCart(item) {
   } else {
     cart.items.push(item)
     cart.totalItems++
-    console.log("before add: ",cart.totalCost)
     cart.totalCost += item.price
-    console.log("after: ",cart.totalCost)
+    cart.totalCost = Math.round(cart.totalCost * 100) / 100
     console.log(cart)
   }
 }
