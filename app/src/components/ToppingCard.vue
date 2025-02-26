@@ -1,12 +1,12 @@
 <template>
   <div class="card bg-[#d5bda5be] w-60 m-8">
     <figure>
-      <img :src="item.image" alt="Shoes" class="mt-2" />
+      <img :src="item.image" :alt="item.name" class="mt-2" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">{{ item.name }}</h2>
       <p>Type: {{ item.type }}</p>
-      <p>Price: ${{ item.price.toFixed(2) }}</p>
+      <p class="text-[#53443d]">Price: ${{ item.price.toFixed(2) }}</p>
       <div class="card-actions justify-end">
         <button @click="addToCart(item)" class="btn btn-primary" :id="item.name">Add</button>
       </div>
