@@ -2,7 +2,7 @@
   <div class="card compact bg-[#fae9da] w-80 m-4 mx-auto">
     <div class="card-body">
       <h2 class="card-title">{{ item.name }}</h2>
-      <h3 class="text-[#53443d]">${{ item.price.toFixed(2) }}</h3>
+      <h3 class="text-[#53443d]">${{ item.price }}</h3>
       <h3 class="text-[#53443d]">{{ item.amount }} servings</h3>
     </div>
     <div class="card-actions justify-end mt-0 ml-0 mb-2 mr-2">
