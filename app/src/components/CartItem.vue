@@ -19,7 +19,6 @@ const props = defineProps({
   amount: Number,
 })
 function removeOne(item) {
-  console.log('remove one clicked')
   cart.items.forEach((i) => {
     if (i.name === item.name) {
       i.amount--
@@ -30,15 +29,12 @@ function removeOne(item) {
   })
   cart.totalCost -= item.price
   cart.totalCost = Math.round(cart.totalCost * 100) / 100
-  console.log(cart)
 }
 function removeAll(item) {
-  console.log('remove one clicked')
   cart.items = cart.items.filter((thing) => thing.name !== item.name)
   cart.totalItems--
   cart.totalCost -= item.price * item.amount
   cart.totalCost = Math.round(cart.totalCost * 100) / 100
-  console.log(cart)
 }
 </script>
 

@@ -20,7 +20,6 @@ const props = defineProps({
   item: Object,
 })
 function addToCart(item) {
-  console.log('add btn clicked')
   let exists = false
   cart.items.forEach((i) => {
     if (i.name === item.name) {
@@ -30,7 +29,6 @@ function addToCart(item) {
   if (exists) {
     //alert('one more serving added')
     cart.items.forEach((i) => {
-      console.log(i.name)
       if (i.name === item.name) {
         i.amount++
         cart.totalCost += item.price
@@ -43,7 +41,6 @@ function addToCart(item) {
     cart.totalItems++
     cart.totalCost += item.price
     cart.totalCost = Math.round(cart.totalCost * 100) / 100
-    console.log(cart)
   }
 }
 </script>
