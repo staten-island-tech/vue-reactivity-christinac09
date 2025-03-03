@@ -16,17 +16,13 @@
 import { cart } from '../variables.js'
 const props = defineProps({
   item: Object,
-  amount: Number,
 })
 function removeOne(item) {
-  cart.items.forEach((i) => {
-    if (i.name === item.name) {
-      i.amount--
-      if (i.amount <= 0) {
-        cart.items = cart.items.filter((thing) => thing.name !== i.name)
-      }
-    }
-  })
+  item.amount--
+  if (item.amount <= 0) {
+    cart.items = cart.items.filter((thing) => thing.name !== i.name)
+  }
+
   cart.totalCost -= item.price
   cart.totalCost = Math.round(cart.totalCost * 100) / 100
 }

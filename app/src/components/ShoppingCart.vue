@@ -6,7 +6,7 @@
     <h3 class="text-xl text-center text-[#53443d] w-full">Total Cost: ${{ cart.totalCost.toFixed(2) }}</h3>
     <h3 class="text-xl text-center text-[#53443d] w-full">Total Toppings: {{ cart.totalItems }}</h3>
     <TheBowl />
-    <CartItem v-for="item in cart.items" :key="item.name" :item="item" :amount="item.amount" />
+    <CartItem v-for="item in cart.items" :key="item.name" :item="item" />
   </div>
 </template>
 
