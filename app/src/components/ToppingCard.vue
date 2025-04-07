@@ -20,12 +20,7 @@ const props = defineProps({
   item: Object,
 })
 function addToCart(item) {
-  let exists = false
-  cart.items.forEach((i) => {
-    if (i.name === item.name) {
-      exists = true
-    }
-  })
+  let exists = cart.items.find((i) => i.name === item.name)
   if (exists) {
     //alert('one more serving added')
     cart.items.forEach((i) => {

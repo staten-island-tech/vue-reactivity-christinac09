@@ -20,7 +20,8 @@ const props = defineProps({
 function removeOne(item) {
   item.amount--
   if (item.amount <= 0) {
-    cart.items = cart.items.filter((thing) => thing.name !== i.name)
+    cart.items = cart.items.filter((thing) => thing.name !== item.name)
+    cart.totalItems--
   }
 
   cart.totalCost -= item.price
