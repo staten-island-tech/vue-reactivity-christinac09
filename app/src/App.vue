@@ -6,7 +6,10 @@ import { RouterLink, RouterView } from 'vue-router'
   <div>
     <header class="absolute top-0 left-0 bg-[#e3baa7] w-full h-[10rem]">
       <h1 class="text-center text-4xl font-bold mt-10">Make Your Own Yogurt Bowl</h1>
-      <p class="text-center font-medium my-7 text-[#53443d]">add as many servings as you want for each topping</p>
+      <p class="text-center font-medium my-7 text-[#53443d]">
+        add as many servings as you want for each topping. your total cost is calculated by the
+        number of toppings
+      </p>
       <!-- <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
